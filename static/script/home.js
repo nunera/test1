@@ -105,7 +105,7 @@ function access(app) {
                                     document.querySelector('main').style.display = 'none';
                                     document.querySelector('header').style.display = 'none';
                                     frame.style.display = 'block';
-                                    frame.src = './load.html#' + encodeURIComponent(btoa(suggestion.phrase));
+                                    frame.src = './load.html#' + encodeURIComponent((suggestion.phrase);
                                     document.querySelector('.access-panel').style.removeProperty('display');
                                 }
                             }

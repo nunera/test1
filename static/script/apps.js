@@ -83,7 +83,7 @@ async function compileGs(app) {
                         document.querySelector('main').style.display = 'none';
                         document.querySelector('header').style.display = 'none';
                         frame.style.display = 'block';
-                        frame.src = (entry.location.startsWith('https://') || entry.location.startsWith('http://')) ? './load.html#' + encodeURIComponent(btoa(entry.location))
+                        frame.src = (entry.location.startsWith('https://') || entry.location.startsWith('http://')) ? './load.html#' + encodeURIComponent(entry.location)
                         : entry.location;
 
                         document.querySelector('.access-panel').style.removeProperty('display');

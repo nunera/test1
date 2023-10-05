@@ -120,7 +120,7 @@ document.querySelector('#access-form').addEventListener('submit', event => {
     
     const frame = document.querySelector('.access-frame');
 
-    frame.src = '/load.html#' + btoa(event.target[0].value);
+    frame.src = '/load.html#' + (event.target[0].value);
     frame.style.display = 'block';
 
     document.querySelector('.access-panel').style.removeProperty('display');
@@ -156,7 +156,7 @@ document.querySelector('.access-link').addEventListener('click', () => {
     
     if (win.__uv) {
         navigator.clipboard.writeText(
-            new URL('./?link=' + encodeURIComponent(btoa(win.__uv.location.href)), location.href).href
+            new URL('./?link=' + encodeURIComponent((win.__uv.location.href)), location.href).href
         );
     };
 
